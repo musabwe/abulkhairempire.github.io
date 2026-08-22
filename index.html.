@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Abulkhair Empire - Quality products, trusted service and excellent value.">
+
+<title>Abulkhair Empire | Quality You Can Trust</title>
+
+<style>
+
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080808;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 7%;
+
+  background: rgba(5,5,5,0.96);
+
+  border-bottom: 1px solid #b88624;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.logo span {
+  color: white;
+}
+
+.nav-button {
+  padding: 10px 18px;
+
+  border: 1px solid #d4af37;
+
+  border-radius: 25px;
+
+  color: #d4af37;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 70px 7%;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.60),
+      rgba(0,0,0,0.78)
+    ),
+    url("abulkhair-banner.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+}
+
+.hero-content {
+
+  max-width: 750px;
+
+}
+
+.small-title {
+
+  color: #d4af37;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+
+}
+
+.hero h1 {
+
+  font-size: clamp(2.5rem, 7vw, 5rem);
+
+  line-height: 1.05;
+
+  margin-bottom: 20px;
+
+}
+
+.gold {
+  color: #d4af37;
+}
+
+.hero p {
+
+  font-size: 1.15rem;
+
+  color: #eeeeee;
+
+  max-width: 650px;
+
+}
+
+.buttons {
+
+  display: flex;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-top: 30px;
+
+}
+
+.btn {
+
+  padding: 15px 25px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  display: inline-block;
+
+}
+
+.primary {
+
+  background: #d4af37;
+
+  color: #080808;
+
+}
+
+.secondary {
+
+  border: 1px solid #d4af37;
+
+  color: #d4af37;
+
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+
+  padding: 80px 7%;
+
+}
+
+.section-title {
+
+  text-align: center;
+
+  margin-bottom: 45px;
+
+}
+
+.section-title small {
+
+  color: #d4af37;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+}
+
+.section-title h2 {
+
+  font-size: clamp(2rem, 5vw, 3rem);
+
+  margin-top: 8px;
+
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+  background: #111111;
+
+}
+
+.about-box {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+
+}
+
+.about-box p {
+
+  color: #d5d5d5;
+
+  font-size: 1.08rem;
+
+}
+
+
+/* =========================
+   VALUES
+========================= */
+
+.values {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(4, 1fr);
+
+  gap: 20px;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+}
+
+.value-card {
+
+  background: #121212;
+
+  border: 1px solid #5e481b;
+
+  padding: 30px 20px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+}
+
+.value-icon {
+
+  font-size: 2.2rem;
+
+  margin-bottom: 15px;
+
+}
+
+.value-card h3 {
+
+  color: #d4af37;
+
+  margin-bottom: 10px;
+
+}
+
+.value-card p {
+
+  color: #cccccc;
+
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+
+  background: #080808;
+
+}
+
+.product-grid {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(3, 1fr);
+
+  gap: 20px;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+}
+
+.product-card {
+
+  background: #141414;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid #4d3b18;
+
+}
+
+.product-card .product-image {
+
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #191919,
+    #29200d
+  );
+
+  font-size: 3rem;
+
+}
+
+.product-card-content {
+
+  padding: 22px;
+
+}
+
+.product-card h3 {
+
+  color: #d4af37;
+
+  margin-bottom: 8px;
+
+}
+
+.product-card p {
+
+  color: #cccccc;
+
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+
+  background: #111111;
+
+}
+
+.gallery-image {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+}
+
+.gallery-image img {
+
+  width: 100%;
+
+  display: block;
+
+  border-radius: 15px;
+
+  border: 2px solid #d4af37;
+
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+  background:
+  linear-gradient(
+    135deg,
+    #17120a,
+    #080808
+  );
+
+}
+
+.contact-box {
+
+  max-width: 850px;
+
+  margin: auto;
+
+  text-align: center;
+
+}
+
+.contact-box h2 {
+
+  font-size: clamp(2rem, 5vw, 3rem);
+
+  margin-bottom: 15px;
+
+}
+
+.contact-box p {
+
+  color: #cccccc;
+
+}
+
+.contact-info {
+
+  margin-top: 30px;
+
+}
+
+.contact-info p {
+
+  margin: 10px 0;
+
+  font-size: 1.05rem;
+
+}
+
+.contact-info strong {
+
+  color: #d4af37;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+  text-align: center;
+
+  padding: 30px 7%;
+
+  background: #050505;
+
+  border-top: 1px solid #3e3015;
+
+  color: #aaaaaa;
+
+}
+
+footer strong {
+
+  color: #d4af37;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+  .values {
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+  }
+
+  .product-grid {
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 560px) {
+
+  nav {
+
+    padding: 15px 5%;
+
+  }
+
+  section {
+
+    padding: 60px 5%;
+
+  }
+
+  .hero {
+
+    min-height: 85vh;
+
+    padding: 60px 5%;
+
+    background-position: center;
+
+  }
+
+  .hero h1 {
+
+    font-size: 2.6rem;
+
+  }
+
+  .hero p {
+
+    font-size: 1rem;
+
+  }
+
+  .buttons {
+
+    flex-direction: column;
+
+  }
+
+  .btn {
+
+    width: 100%;
+
+    text-align: center;
+
+  }
+
+  .values,
+  .product-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .gallery-image img {
+
+    border-radius: 10px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a class="logo" href="#home">
+
+Abulkhair <span>Empire</span>
+
+</a>
+
+<a class="nav-button" href="#contact">
+
+Contact
+
+</a>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+<div class="hero-content">
+
+<p class="small-title">
+
+QUALITY • TRUST • EXCELLENCE
+
+</p>
+
+<h1>
+
+Welcome to
+<span class="gold">
+Abulkhair Empire
+</span>
+
+</h1>
+
+<p>
+
+A trusted business committed to providing
+quality products, excellent customer service
+and great value at affordable prices.
+
+</p>
+
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I%27m%20interested%20in%20your%20products.">
+
+Order / Enquire on WhatsApp
+
+</a>
+
+
+<a class="btn secondary"
+href="#products">
+
+Explore Products
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="section-title">
+
+<small>ABOUT US</small>
+
+<h2>Who We Are</h2>
+
+</div>
+
+
+<div class="about-box">
+
+<p>
+
+Abulkhair Empire is a trusted company committed
+to providing quality products and outstanding
+customer service at affordable prices.
+
+We value honesty, reliability and customer
+satisfaction in everything we do.
+
+Our mission is to deliver excellent value while
+building lasting relationships with our customers
+through professionalism, integrity and a commitment
+to quality and excellence.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- VALUES -->
+
+<section>
+
+<div class="section-title">
+
+<small>OUR PROMISE</small>
+
+<h2>Why Choose Abulkhair Empire?</h2>
+
+</div>
+
+
+<div class="values">
+
+
+<div class="value-card">
+
+<div class="value-icon">🏆</div>
+
+<h3>Quality</h3>
+
+<p>
+We provide products selected with
+quality and customer satisfaction in mind.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">🤝</div>
+
+<h3>Trust</h3>
+
+<p>
+Honesty and transparency are at
+the heart of our business.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">❤️</div>
+
+<h3>Customer Focus</h3>
+
+<p>
+Your satisfaction is our priority.
+We value every customer.
+</p>
+
+</div>
+
+
+<div class="value-card">
+
+<div class="value-icon">💰</div>
+
+<h3>Great Value</h3>
+
+<p>
+Quality products at competitive
+and affordable prices.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+<div class="section-title">
+
+<small>OUR PRODUCTS</small>
+
+<h2>What We Offer</h2>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<div class="product-card">
+
+<div class="product-image">
+👗
+</div>
+
+<div class="product-card-content">
+
+<h3>Textiles & Fabrics</h3>
+
+<p>
+Quality fabrics and textile products
+for different needs and occasions.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+🛍️
+</div>
+
+<div class="product-card-content">
+
+<h3>Fashion Products</h3>
+
+<p>
+Stylish products selected with
+quality and value in mind.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+📦
+</div>
+
+<div class="product-card-content">
+
+<h3>Other Products</h3>
+
+<p>
+We also offer other products based
+on customer needs and availability.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<div class="section-title">
+
+<small>OUR BRAND</small>
+
+<h2>Abulkhair Empire</h2>
+
+</div>
+
+
+<div class="gallery-image">
+
+<img src="abulkhair-banner.png"
+alt="Abulkhair Empire">
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="contact-box">
+
+<div class="section-title">
+
+<small>GET IN TOUCH</small>
+
+<h2>Let's Do Business</h2>
+
+</div>
+
+
+<p>
+
+Interested in our products or want to make
+an enquiry? Contact Abulkhair Empire today.
+
+</p>
+
+
+<div class="contact-info">
+
+<p>
+<strong>📞 Phone:</strong>
+07017929081
+</p>
+
+<p>
+<strong>📞 Phone:</strong>
+09061746841
+</p>
+
+<p>
+<strong>📧 Email:</strong>
+musabsaniahmad9081@gmail.com
+</p>
+
+<p>
+<strong>📍 Business:</strong>
+Abulkhair Empire
+</p>
+
+</div>
+
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I%27d%20like%20to%20make%20an%20enquiry.">
+
+💬 Chat on WhatsApp
+
+</a>
+
+<a class="btn secondary"
+href="mailto:musabsaniahmad9081@gmail.com">
+
+📧 Send Email
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 <strong>Abulkhair Empire</strong>.
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Quality You Can Trust • Service You Deserve
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
