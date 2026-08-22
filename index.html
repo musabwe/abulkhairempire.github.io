@@ -8,7 +8,7 @@
 content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
-content="Abulkhair Empire - Quality products, trusted service and excellent value.">
+content="Abulkhair Empire - Quality clothing, shoes, fashion accessories and excellent customer service.">
 
 <title>Abulkhair Empire | Quality You Can Trust</title>
 
@@ -56,7 +56,7 @@ nav {
 
   padding: 18px 7%;
 
-  background: rgba(5,5,5,0.96);
+  background: rgba(5,5,5,0.97);
 
   border-bottom: 1px solid #b88624;
 }
@@ -71,6 +71,22 @@ nav {
   color: white;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #dddddd;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
 .nav-button {
   padding: 10px 18px;
 
@@ -78,7 +94,7 @@ nav {
 
   border-radius: 25px;
 
-  color: #d4af37;
+  color: #d4af37 !important;
 
   font-weight: bold;
 }
@@ -111,9 +127,7 @@ nav {
 }
 
 .hero-content {
-
   max-width: 750px;
-
 }
 
 .small-title {
@@ -166,7 +180,7 @@ nav {
 
 .btn {
 
-  padding: 15px 25px;
+  padding: 14px 22px;
 
   border-radius: 8px;
 
@@ -174,6 +188,12 @@ nav {
 
   display: inline-block;
 
+  transition: 0.3s;
+
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }
 
 .primary {
@@ -290,6 +310,13 @@ section {
 
   border-radius: 12px;
 
+  transition: 0.3s;
+
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4af37;
 }
 
 .value-icon {
@@ -332,7 +359,7 @@ section {
   grid-template-columns:
   repeat(3, 1fr);
 
-  gap: 20px;
+  gap: 25px;
 
   max-width: 1100px;
 
@@ -344,17 +371,27 @@ section {
 
   background: #141414;
 
-  border-radius: 12px;
+  border-radius: 15px;
 
   overflow: hidden;
 
   border: 1px solid #4d3b18;
 
+  transition: 0.3s;
+
 }
 
-.product-card .product-image {
+.product-card:hover {
 
-  height: 190px;
+  transform: translateY(-7px);
+
+  border-color: #d4af37;
+
+}
+
+.product-image {
+
+  height: 220px;
 
   display: flex;
 
@@ -369,13 +406,13 @@ section {
     #29200d
   );
 
-  font-size: 3rem;
+  font-size: 5rem;
 
 }
 
 .product-card-content {
 
-  padding: 22px;
+  padding: 25px;
 
 }
 
@@ -383,13 +420,41 @@ section {
 
   color: #d4af37;
 
-  margin-bottom: 8px;
+  font-size: 1.5rem;
+
+  margin-bottom: 10px;
 
 }
 
 .product-card p {
 
   color: #cccccc;
+
+  margin-bottom: 20px;
+
+}
+
+.order-btn {
+
+  display: inline-block;
+
+  background: #d4af37;
+
+  color: #080808;
+
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+}
+
+.order-btn:hover {
+
+  background: #ffffff;
 
 }
 
@@ -472,13 +537,19 @@ section {
 
 .contact-info p {
 
-  margin: 10px 0;
+  margin: 12px 0;
 
   font-size: 1.05rem;
 
 }
 
 .contact-info strong {
+
+  color: #d4af37;
+
+}
+
+.contact-info a:hover {
 
   color: #d4af37;
 
@@ -516,6 +587,10 @@ footer strong {
 
 @media (max-width: 850px) {
 
+  .nav-links a:not(.nav-button) {
+    display: none;
+  }
+
   .values {
 
     grid-template-columns:
@@ -539,6 +614,10 @@ footer strong {
 
     padding: 15px 5%;
 
+  }
+
+  .logo {
+    font-size: 1.15rem;
   }
 
   section {
@@ -606,7 +685,9 @@ footer strong {
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
@@ -616,26 +697,30 @@ Abulkhair <span>Empire</span>
 
 </a>
 
-<a class="nav-button" href="#contact">
+<div class="nav-links">
 
-Contact
+<a href="#about">About</a>
 
-</a>
+<a href="#products">Products</a>
+
+<a href="#contact" class="nav-button">Contact</a>
+
+</div>
 
 </nav>
 
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <header class="hero" id="home">
 
 <div class="hero-content">
 
 <p class="small-title">
-
 QUALITY • TRUST • EXCELLENCE
-
 </p>
 
 <h1>
@@ -649,9 +734,10 @@ Abulkhair Empire
 
 <p>
 
-A trusted business committed to providing
-quality products, excellent customer service
-and great value at affordable prices.
+Your trusted destination for quality clothing,
+shoes and fashion accessories. We are committed
+to providing excellent products, reliable service
+and great value for our customers.
 
 </p>
 
@@ -659,9 +745,9 @@ and great value at affordable prices.
 <div class="buttons">
 
 <a class="btn primary"
-href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I%27m%20interested%20in%20your%20products.">
+href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I'm%20interested%20in%20your%20products.">
 
-Order / Enquire on WhatsApp
+🛍️ Order on WhatsApp
 
 </a>
 
@@ -681,7 +767,9 @@ Explore Products
 
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section class="about" id="about">
 
@@ -698,17 +786,14 @@ Explore Products
 
 <p>
 
-Abulkhair Empire is a trusted company committed
-to providing quality products and outstanding
-customer service at affordable prices.
+Abulkhair Empire is a growing fashion and lifestyle
+business committed to providing quality clothing,
+shoes and fashion accessories at affordable prices.
 
-We value honesty, reliability and customer
-satisfaction in everything we do.
-
-Our mission is to deliver excellent value while
-building lasting relationships with our customers
-through professionalism, integrity and a commitment
-to quality and excellence.
+We believe that good products should come with
+excellent customer service. Our goal is to make
+shopping simple, convenient and enjoyable while
+building lasting relationships with our customers.
 
 </p>
 
@@ -718,7 +803,9 @@ to quality and excellence.
 
 
 
-<!-- VALUES -->
+<!-- =========================
+     VALUES
+========================= -->
 
 <section>
 
@@ -741,8 +828,8 @@ to quality and excellence.
 <h3>Quality</h3>
 
 <p>
-We provide products selected with
-quality and customer satisfaction in mind.
+We select products with quality,
+style and customer satisfaction in mind.
 </p>
 
 </div>
@@ -769,8 +856,8 @@ the heart of our business.
 <h3>Customer Focus</h3>
 
 <p>
+Every customer matters to us.
 Your satisfaction is our priority.
-We value every customer.
 </p>
 
 </div>
@@ -796,13 +883,15 @@ and affordable prices.
 
 
 
-<!-- PRODUCTS -->
+<!-- =========================
+     PRODUCTS
+========================= -->
 
 <section class="products" id="products">
 
 <div class="section-title">
 
-<small>OUR PRODUCTS</small>
+<small>OUR COLLECTION</small>
 
 <h2>What We Offer</h2>
 
@@ -812,6 +901,8 @@ and affordable prices.
 <div class="product-grid">
 
 
+<!-- CLOTHING -->
+
 <div class="product-card">
 
 <div class="product-image">
@@ -820,54 +911,82 @@ and affordable prices.
 
 <div class="product-card-content">
 
-<h3>Textiles & Fabrics</h3>
+<h3>Clothing</h3>
 
 <p>
-Quality fabrics and textile products
-for different needs and occasions.
+Discover quality and stylish clothing
+selected to give you comfort, confidence
+and a great look.
 </p>
 
-</div>
+<a class="order-btn"
+href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I'm%20interested%20in%20your%20Clothing%20collection.">
+
+Order Clothing
+
+</a>
 
 </div>
 
+</div>
 
+
+
+<!-- SHOES -->
 
 <div class="product-card">
 
 <div class="product-image">
-🛍️
+👟
 </div>
 
 <div class="product-card-content">
 
-<h3>Fashion Products</h3>
+<h3>Shoes</h3>
 
 <p>
-Stylish products selected with
-quality and value in mind.
+Step out in style with quality footwear
+suitable for different occasions and
+personal styles.
 </p>
 
-</div>
+<a class="order-btn"
+href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I'm%20interested%20in%20your%20Shoes.">
+
+Order Shoes
+
+</a>
 
 </div>
 
+</div>
 
+
+
+<!-- ACCESSORIES -->
 
 <div class="product-card">
 
 <div class="product-image">
-📦
+👜
 </div>
 
 <div class="product-card-content">
 
-<h3>Other Products</h3>
+<h3>Fashion Accessories</h3>
 
 <p>
-We also offer other products based
-on customer needs and availability.
+Complete your look with carefully selected
+fashion accessories that add elegance
+and personality.
 </p>
+
+<a class="order-btn"
+href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I'm%20interested%20in%20your%20Fashion%20Accessories.">
+
+Order Accessories
+
+</a>
 
 </div>
 
@@ -880,7 +999,9 @@ on customer needs and availability.
 
 
 
-<!-- GALLERY -->
+<!-- =========================
+     GALLERY
+========================= -->
 
 <section class="gallery">
 
@@ -904,7 +1025,9 @@ alt="Abulkhair Empire">
 
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section class="contact" id="contact">
 
@@ -924,6 +1047,8 @@ alt="Abulkhair Empire">
 Interested in our products or want to make
 an enquiry? Contact Abulkhair Empire today.
 
+We are ready to serve you.
+
 </p>
 
 
@@ -931,17 +1056,23 @@ an enquiry? Contact Abulkhair Empire today.
 
 <p>
 <strong>📞 Phone:</strong>
+<a href="tel:07017929081">
 07017929081
+</a>
 </p>
 
 <p>
 <strong>📞 Phone:</strong>
+<a href="tel:09061746841">
 09061746841
+</a>
 </p>
 
 <p>
 <strong>📧 Email:</strong>
+<a href="mailto:musabsaniahmad9081@gmail.com">
 musabsaniahmad9081@gmail.com
+</a>
 </p>
 
 <p>
@@ -955,7 +1086,7 @@ Abulkhair Empire
 <div class="buttons">
 
 <a class="btn primary"
-href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I%27d%20like%20to%20make%20an%20enquiry.">
+href="https://wa.me/2347017929081?text=Hello%20Abulkhair%20Empire%2C%20I'd%20like%20to%20make%20an%20enquiry.">
 
 💬 Chat on WhatsApp
 
@@ -976,7 +1107,9 @@ href="mailto:musabsaniahmad9081@gmail.com">
 
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
